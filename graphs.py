@@ -12,7 +12,7 @@ for i in range(len(voltage_array)):
     time_array.append(i*tmp[1])
 
 fig, ax = plt.subplots(figsize=(16, 10), dpi = 400)
-ax.plot(time_array, voltage_array, lw = 5, c = 'brown', marker = '^', markevery = 30, markersize = 15)
+ax.plot(time_array, voltage_array, lw = 5, c = 'blue', marker = '^', markevery = 30, markersize = 15)
 
 ax.set_xlim([min(time_array), max(time_array)]) #axes limits
 ax.set_ylim([min(voltage_array), 1.05*max(voltage_array)])
