@@ -23,7 +23,7 @@ y0 = np.polyval(plf, 0)
 k = (np.polyval(plf, 160) - np.polyval(plf, 40))/(160 - 40)
 leg = str(" N = {:.3f}P + {:.3f}".format(k, y0))
 
-fig1, ax = plt.subplots(figsize = (16, 10), dpi = 400)
+fig1, ax = plt.subplots(figsize = (16, 10), dpi = 100)
 ax.plot(dataarr, yfit,  label = leg, lw = 2, c = 'red')
 plt.ylabel("ADC counts")
 plt.xlabel("Pressure, mmHg")
